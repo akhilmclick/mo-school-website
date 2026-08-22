@@ -1,13 +1,26 @@
 "use client";
 
+import { useRef } from "react";
 import { motion } from "framer-motion";
+import ScrollPlane from "./ScrollPlane";
 
 export default function ClosingCTA() {
+  const sectionRef = useRef<HTMLElement>(null);
+
   return (
     <section
+      ref={sectionRef}
       id="contact"
       className="relative py-24 sm:py-32 overflow-hidden"
     >
+      {/* 3rd flight: Takeoff upward arc into the sky gradient */}
+      <ScrollPlane
+        sectionRef={sectionRef}
+        path="M -50 480 C 220 440, 580 340, 820 180 C 920 110, 1020 40, 1120 -30"
+        viewBox="0 0 1000 600"
+        opacityRange={[0.05, 0.2, 0.75, 0.95]}
+      />
+
       {/* Gradient background matching hero */}
       <div className="absolute inset-0 sky-gradient" />
 

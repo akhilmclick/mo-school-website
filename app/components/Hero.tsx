@@ -58,12 +58,25 @@ const pillItems = [
   },
 ];
 
+import { useRef } from "react";
+import ScrollPlane from "./ScrollPlane";
+
 export default function Hero() {
+  const sectionRef = useRef<HTMLElement>(null);
+
   return (
     <section
+      ref={sectionRef}
       id="hero"
       className="relative sky-gradient overflow-hidden pt-28 sm:pt-32 pb-32 sm:pb-44 lg:pb-56"
     >
+      {/* Scroll-animated paper plane */}
+      <ScrollPlane
+        sectionRef={sectionRef}
+        path="M -50 140 C 220 80, 500 240, 780 340 C 920 390, 1040 440, 1120 520"
+        viewBox="0 0 1000 700"
+        opacityRange={[0.02, 0.15, 0.7, 0.9]}
+      />
       {/* Dot grid pattern in corner */}
       <div
         className="dot-grid absolute top-0 right-0 w-[50%] h-[60%] opacity-[0.35]"
