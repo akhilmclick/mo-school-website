@@ -13,14 +13,14 @@ const founders = [
   {
     initials: "M",
     name: "Moin",
-    role: "Co-Founder | Strategy & Operations",
-    bio: "Moin brings a strong business and execution mindset to the team. He focuses on turning ideas into structured initiatives, understanding opportunities, and helping move projects from concept to execution.",
+    role: "Founder",
+    bio: "Moin brings a strong business and execution mindset to Mo-School. He focuses on driving the company's strategic vision, turning opportunities into structured initiatives, and leading execution on the ground.",
   },
   {
     initials: "A",
     name: "Akhil",
-    role: "Co-Founder | Product & Business",
-    bio: "Akhil brings together product thinking, business strategy, sales, marketing, and a growing passion for technology. His strength lies in understanding problems from the customer's perspective and turning those insights into products people actually want to use. He focuses on product vision, strategy, user experience, and turning ideas into executable products.",
+    role: "Co-Founder | Product & Tech",
+    bio: "Akhil leads product and technology, combining software engineering, product strategy, and user experience design. He focuses on building scalable technical architecture and turning complex school workflows into simple, reliable software.",
   },
 ];
 
@@ -84,8 +84,8 @@ export default function Founders() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="text-center text-muted text-sm sm:text-base mt-12 max-w-2xl mx-auto leading-relaxed"
         >
-          Together, Moin and Akhil combine product, business, and execution to
-          build with a practical founder-first mindset.
+          Together, Moin and Akhil combine operational leadership and technical
+          execution to build Mo-School with a practical, founder-first mindset.
         </motion.p>
       </div>
     </section>
